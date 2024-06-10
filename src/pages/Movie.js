@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
-import Tmdb from "./Tmdb"
+import Tmdb from "../components/Tmdb"
+import Header from "../components/Header"
 
 import "../App.css"
 
@@ -8,12 +9,27 @@ export default () => {
     // armazenar o filme escolhido
     const [movie, setMovie] = useState([])
 
+    // visibilidade de fundo do header
+    const [backgroundHeader, setBackgroundHeader] = useState(false)
+
+    // selecionar id do filme pela URL
+    let idMovie = window.location.href.substring(28, 40)
+
+    // selecionar o tipo do filme pela URL
+    let type = window.location.href.substring(28, 30)
+    if (type != "tv") {
+        type = "movie"
+    } else {
+        idMovie = idMovie.substring(10, 3)
+    }
+
     // converter lista da função para json
     useEffect(() => {
         const loadMovie = async () => {
-            let movie = await Tmdb.getMovieInfo(154, "movie")
+            let movie = await Tmdb.getMovieInfo(idMovie, type)
+            console.log(type);
+            console.log(idMovie);
             setMovie(movie)
-            console.log(movie);
         }
 
         loadMovie()
@@ -45,6 +61,11 @@ export default () => {
 
     return (
         <div className="movieTESTE">
+            {/* header */}
+            <Header
+                black={backgroundHeader}
+            ></Header>
+
             {/* lisa de informações que posso puxar da API */}
             {createdBy.length > 0 ? <p>Criador{createdBy.length > 1 ? "es" : ""}: {createdBy.join(', ', "")}</p> : ""}
             {movie.first_air_date ? <p>Data de lançamento: {movie.first_air_date}</p> : ""}

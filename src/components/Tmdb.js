@@ -15,18 +15,21 @@ export default {
     getHomeList: async () => {
         return [
             {
+                id: "1",
                 slug: "originals",
                 title: "Originais da Netflix",
                 itens: await fetchFunction(`discover/tv?api_key=${API_KEY}&language=pt-BR?&with_networks=213`),
             },
 
             {
+                id: "2",
                 slug: "trending",
                 title: "Recomendados para Você",
                 itens: await fetchFunction(`trending/all/week?api_key=${API_KEY}&language=pt-BR`)
             },
 
             {
+                id: "3",
                 slug: "toprated",
                 title: "Em Alta",
                 itens: await fetchFunction(`movie/top_rated?api_key=${API_KEY}&language=pt-BR`)
@@ -34,93 +37,59 @@ export default {
 
             // categorias por gênero
             {
+                id: "4",
                 slug: "action",
                 title: "Ação",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=28`)
             },
 
             {
-                slug: "adventure",
-                title: "Aventura",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=12`)
-            },
-
-            {
+                id: "5",
                 slug: "animation",
                 title: "Animação",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=16`)
             },
 
             {
+                id: "6",
                 slug: "comedy",
                 title: "Comédia",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=35`)
             },
 
             {
-                slug: "crime",
-                title: "Crime",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=80`)
-            },
-
-            {
+                id: "7",
                 slug: "documentary",
                 title: "Documentários",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=99`)
             },
 
             {
+                id: "8",
                 slug: "drama",
                 title: "Drama",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=18`)
             },
 
             {
-                slug: "family",
-                title: "Família",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=10751`)
-            },
-
-            {
+                id: "9",
                 slug: "fantasy",
                 title: "Fantasia",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=14`)
             },
 
             {
+                id: "10",
                 slug: "horror",
                 title: "Terror",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=27`)
             },
 
             {
+                id: "11",
                 slug: "music",
                 title: "Música",
                 itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=10402`)
-            },
-
-            {
-                slug: "mystery",
-                title: "Mistério",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=9648`)
-            },
-
-            {
-                slug: "romance",
-                title: "Romance",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=10749`)
-            },
-
-            {
-                slug: "science fiction",
-                title: "Ficção Científica",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=878`)
-            },
-
-            {
-                slug: "war",
-                title: "Guerra",
-                itens: await fetchFunction(`discover/movie?api_key=${API_KEY}&language=pt-BR&with_genres=10752`)
             }
         ]
     },

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Tmdb from './components/Tmdb';
 import Header from "./components/Header"
 import MainMovie from "./components/MainMovie";
 import MovieRow from "./components/MovieRow";
-// import Movie from "./movie/Movie";
+
+import Movie from "./pages/Movie";
+import NotFound from "./pages/NotFound";
 
 import './App.css';
 
@@ -51,46 +54,61 @@ function App() {
     }
   }, [])
 
-  // <Movie></Movie>
   return (
-    <main>
-      {/* header */}
-      <Header
-        black={backgroundHeader}
-      ></Header>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={
+          <main>
+            {/* header */}
+            <Header
+              black={backgroundHeader}
+            ></Header>
 
-      {/* filme principal */}
-      {mainMovieData &&
-        <MainMovie
-          item={mainMovieData}
-        ></MainMovie>
-      }
+            {/* filme principal */}
+            {mainMovieData &&
+              <MainMovie
+                item={mainMovieData}
+              ></MainMovie>
+            }
 
-      {/* lista de filmes */}
-      <section className="lists">
-        {
-          movieList.map((item, key) => (
-            <div>
-              <MovieRow
-                key={key}
-                title={item.title}
-                itens={item.itens}>
-              </MovieRow>
-            </div>
-          ))
-        }
-      </section>
+            {/* lista de filmes */}
+            <section className="lists">
+              {
+                movieList.map((item, id) => (
+                  <div key={id}>
+                    <MovieRow
+                      key={id}
+                      title={item.title}
+                      itens={item.itens}>
+                    </MovieRow>
+                  </div>
+                ))
+              }
+            </section>
 
-      <footer>
-        <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
-      </footer>
+            <footer>
+              <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
+            </footer>
 
-      {movieList.length <= 0 &&
-        <div className="loading">
-          <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif" alt="loading" />
-        </div>
-      }
-    </main >
+            {movieList.length <= 0 &&
+              <div className="loading">
+                <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif" alt="loading" />
+              </div>
+            }
+          </main >
+        } />
+
+        <Route
+          path="/movie/:idMovie"
+          element={<Movie />}
+        // action={
+        //   redirect(`/movie/${item.id}`)
+        // }
+        />
+
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+    </Router>
   )
 }
 
