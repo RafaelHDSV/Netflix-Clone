@@ -5,13 +5,10 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
-
-<div style="display: flex; justify-content: center; align-items: center; gap: .5rem; padding: 0 0 1rem 0">
-    <img src="https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react" />
-    <img src="https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript" />
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-</div>
+![React language](https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react)
+![Javascript language](https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript)
+![CSS language](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML language](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 <p align="center">
  <a href="#about">About</a> • 
