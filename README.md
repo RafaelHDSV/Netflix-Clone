@@ -1,7 +1,10 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://github.com/Fernanda-Kipper/Readme-Templates
 
-<h1 align="center">Netflix Clone <img src="./public/logo.png" /></h1>
+<p align="center">
+    <h1>Netflix Clone</h1>
+    <img src="./public/logo.png" width="50px"/>
+</p>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
@@ -13,9 +16,9 @@
 <p align="center">
  <a href="#about">About</a> • 
  <a href="#started">Getting Started</a> • 
-  <a href="#started">App Routes</a> • 
-  <a href="#colab">Collaborators</a> •
- <a href="#contribute">Contribute</a>
+    <a href="#started">App Routes</a> • 
+    <a href="#colab">Collaborators</a> •
+    <a href="#contribute">Contribute</a>
 </p>
 
 <p align="center">
