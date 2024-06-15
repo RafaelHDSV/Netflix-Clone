@@ -1,17 +1,14 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://github.com/Fernanda-Kipper/Readme-Templates
 
-<p align="center">
-    <h1>Netflix Clone</h1>
-    <img src="./public/logo.png" width="50px"/>
-</p>
+# Netflix Clone
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 ![React language](https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react)
 ![Javascript language](https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript)
 ![CSS language](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML language](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
 <p align="center">
  <a href="#about">About</a> • 
@@ -47,7 +44,7 @@ Here you list all prerequisites necessary for running your project. For example:
 How to clone your project
 
 ```bash
-git clone your-project-url-in-github
+git clone https://github.com/RafaelHDSV/Netflix-Clone.git
 ```
 
 <h3>Starting</h3>
@@ -55,8 +52,8 @@ git clone your-project-url-in-github
 How to start your project
 
 ```bash
-cd project-name
-npm some-command-to-run
+cd netflix-clone
+npm start
 ```
 
 <h2 id="routes">📍 Application Routes</h2>
