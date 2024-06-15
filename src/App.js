@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Tmdb from './components/Tmdb';
+import Tmdb from './api/Tmdb';
 import Header from "./components/Header"
 import MainMovie from "./components/MainMovie";
 import MovieRow from "./components/MovieRow";
@@ -10,6 +10,7 @@ import Movie from "./pages/Movie";
 import NotFound from "./pages/NotFound";
 
 import './App.css';
+import User from "./pages/User";
 
 function App() {
   // armazenar listas de filme
@@ -62,7 +63,8 @@ function App() {
             {/* header */}
             <Header
               black={backgroundHeader}
-            ></Header>
+            >
+            </Header>
 
             {/* filme principal */}
             {mainMovieData &&
@@ -74,10 +76,10 @@ function App() {
             {/* lista de filmes */}
             <section className="lists">
               {
-                movieList.map((item, id) => (
-                  <div key={id}>
+                movieList.map((item) => (
+                  <div>
                     <MovieRow
-                      key={id}
+                      id={item.id}
                       title={item.title}
                       itens={item.itens}>
                     </MovieRow>
@@ -101,10 +103,9 @@ function App() {
         <Route
           path="/movie/:idMovie"
           element={<Movie />}
-        // action={
-        //   redirect(`/movie/${item.id}`)
-        // }
         />
+
+        <Route path="/user" element={<User />}></Route>
 
         <Route path="*" element={<NotFound />}></Route>
       </Routes>

@@ -22,7 +22,7 @@ export default ({ item }) => {
         }}>
             <div className="filter-vertical">
                 <div className="filter-horizontal">
-                    <div className="name">{item.original_name}</div>
+                    <div className="name">{item.name}</div>
 
                     <div className="info">
                         <div className="vote-average">{item.vote_average.toFixed(1)}</div>
@@ -32,12 +32,12 @@ export default ({ item }) => {
 
                     <div className="description">{description}</div>
 
-                    <div className="buttons">
-                        <a className="watch-button" href={`/`}>▶ Assistir</a>
-                        <a className="add-button" href={`/`}>+ Minha Lista</a>
-                    </div>
+                    <div className="genres"><p><strong>Gênero{genres.length !== 1 ? "s" : ""}: </strong>{genres.join(", ")}</p></div>
 
-                    <div className="genres"><strong>Gênero{genres.length !== 1 ? "s" : ""}: </strong>{genres.join(", ")}</div>
+                    <div className="buttons">
+                        <a className="watch-button" href={`https://www.youtube.com/results?search_query=trailer+${item.name}`} target="blank">▶ Assistir</a>
+                        <a className="add-button" href={`/movie/${!item.original_title ? "tv_" : ""}${item.id}`}>Mais informações</a>
+                    </div>
                 </div>
             </div>
         </section >
