@@ -1,7 +1,4 @@
-[PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]: https://github.com/Fernanda-Kipper/Readme-Templates
-
-# Netflix Clone
+# Netflix Clone 🎥
 
 ![React language](https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react)
 ![Javascript language](https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript)
@@ -11,45 +8,31 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
 <p align="center">
- <a href="#about">About</a> • 
- <a href="#started">Getting Started</a> • 
-    <a href="#started">App Routes</a> • 
-    <a href="#colab">Collaborators</a> •
-    <a href="#contribute">Contribute</a>
+    <img src="./public/images/main.png" alt="Image Example">
 </p>
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <a href="#about">About |</a> 
+    <a href="#started">Getting Started</a> 
+    <a href="#routes">| App Routes</a> 
 </p>
 
-<h2 id="started">📌 About</h2>
+<h2 id="about">📌 About</h2>
 
-Simple description of what your project do or how to use it.
-
-[![project][PROJECT__BADGE]][PROJECT__URL]
+This project is a Netflix clone, made to test knowledge in React. The <a href="https://www.themoviedb.org">TMDB API</a> was used and several features were added, such as: selection of the user's photo and storage in localStorage, filter by films and series or by all, option to see more precise details of each film.
 
 <h2 id="started">🚀 Getting started</h2>
 
-Here you describe how to run your project locally
-
-<h3>Prerequisites</h3>
-
-Here you list all prerequisites necessary for running your project. For example:
-
--    [NodeJS](https://github.com/)
--    [Git 2](https://github.com)
+To run locally, you must have an access key for the TMDB Api and install the prerequisites
 
 <h3>Cloning</h3>
 
-How to clone your project
-
 ```bash
 git clone https://github.com/RafaelHDSV/Netflix-Clone.git
+npm install
 ```
 
 <h3>Starting</h3>
-
-How to start your project
 
 ```bash
 cd netflix-clone
@@ -58,58 +41,33 @@ npm start
 
 <h2 id="routes">📍 Application Routes</h2>
 
-Here you can list the main routes of your API, and what are their expected request bodies.
+There are basically such routes on the website, where you can navigate them at any time
 ​
 | route | description  
 |----------------------|-----------------------------------------------------
-| <kbd>/authenticate</kbd> | page that list all user info
-| <kbd>/login</kbd> | page to login
-| <kbd>/dashboard</kbd> | page that contains all user shopping and spences info
+| <kbd>/</kbd> | home page where you can see all the films
+| <kbd>/movie</kbd> | page to get more detailed information about the selected film
+| <kbd>/user</kbd> | page to select the user icon
+| <kbd>/_error_</kbd> | page when the route does not exist or is not found
 
-<h2 id="colab">🤝 Collaborators</h2>
+<hr/>
 
-Special thank you for all people that contributed for this project.
+### route: <kbd>/</kbd>
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/61896274?v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
-        <sub>
-          <b>Fernanda Kipper</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://t.ctcdn.com.br/n7eZ74KAcU3iYwnQ89-ul9txVxc=/400x400/smart/filters:format(webp)/i490769.jpeg" width="100px;" alt="Elon Musk Picture"/><br>
-        <sub>
-          <b>Elon Musk</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<img src="./public/images/root.png"/>
 
-<h2 id="contribute">📫 Contribute</h2>
+<hr/>
 
-Here you will explain how other developers can contribute to your project. For example, explaining how can create their branches, which patterns to follow and how to open an pull request
+### route: <kbd>/movie</kbd>
 
-1. `git clone https://github.com/Fernanda-Kipper/text-editor.git`
-2. `git checkout -b feature/NAME`
-3. Follow commit patterns
-4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
+-    movie
+     <img src="./public/images/movie.png"/>
 
-<h3>Documentations that might help</h3>
+-    tv
+     <img src="./public/images/tv.png"/>
 
-[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
+<hr/>
 
-[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+### route: <kbd>/user</kbd>
+
+<img src="./public/images/user.png"/>
