@@ -1,10 +1,10 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://github.com/Fernanda-Kipper/Readme-Templates
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 1rem">
-    <h1 align="center" style="font-weight: bold;">Netflix Clone</h1>
-    <img src="https://cdn3.emoji.gg/emojis/3266_Netflix.png" width="50px">
-</div>
+# Netflix Clone
+
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
 <div style="display: flex; justify-content: center; align-items: center; gap: .5rem; padding: 0 0 1rem 0">
     <img src="https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react" />
