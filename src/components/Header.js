@@ -18,7 +18,7 @@ export const Header = ({ black, optionSelect }) => {
 
     // mudar o border-bottom de acordo com a seleção do usuário
     for (let i = 0; i < options.length; i++) {
-        if (options[i].innerHTML === selectOption) {
+        if (options[i].innerHTML == optionSelect) {
             options[i].classList.add("select-option")
         } else {
             options[i].classList.remove("select-option")
@@ -53,7 +53,7 @@ export const Header = ({ black, optionSelect }) => {
             <a href="/user">
                 <img className="header-user"
                     src={localStorage.getItem("user")}
-                    alt="user" />
+                    alt="Selecione seu perfil" />
             </a>
         </header>
     )
