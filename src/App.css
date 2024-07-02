@@ -87,7 +87,7 @@ header .header-user:hover {
 	transform: scale(1.1);
 }
 
-header .header-left .options .select-option {
+.select-option {
 	border-bottom: 2px solid var(--red);
 }
 
