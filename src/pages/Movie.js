@@ -23,8 +23,8 @@ const Movie = () => {
     if (type !== "tv") {
         type = "movie"
     } else {
-        idMovie = idMovie.substring(2, 10)
-        console.log(idMovie.substring(2, 10));
+        idMovie = window.location.href.substring(49, 60)
+        console.log(window.location.href.substring(49, 60));
     }
 
     // converter lista da função para json
