@@ -39,9 +39,7 @@ cd netflix-clone
 npm start
 ```
 
-or
-
-[URL Project](https://netflix-clone-rafael.vercel.app)
+or [Open URL Project](https://netflix-clone-rafael.vercel.app)
 
 <h2 id="routes">📍 Application Routes</h2>
 
