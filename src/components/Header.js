@@ -7,7 +7,7 @@ export const Header = ({ black, optionSelect }) => {
     let options = document.querySelectorAll('.options li')
 
     // useState da opção selecionada
-    const [selectOption, setSelectOption] = useState(localStorage.getItem("selectOption"))
+    const [selectOption, setSelectOption] = useState()
 
 
     // mudar use stade da opção selecionada no tipo
@@ -19,7 +19,7 @@ export const Header = ({ black, optionSelect }) => {
 
     // mudar o border-bottom de acordo com a seleção do usuário
     for (let i = 0; i < options.length; i++) {
-        if (options[i].innerHTML == selectOption) {
+        if (options[i].innerHTML === selectOption) {
             options[i].classList.add("select-option")
         } else {
             options[i].classList.remove("select-option")
@@ -27,7 +27,7 @@ export const Header = ({ black, optionSelect }) => {
 
         // selecionar o tipo automaticamente quando entrar na página Movie
         if (window.location.href.substring(22, 50) !== "") {
-            if (options[i].innerHTML == optionSelect) {
+            if (options[i].innerHTML === optionSelect) {
                 options[i].classList.add("select-option")
             } else {
                 options[i].classList.remove("select-option")
