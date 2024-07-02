@@ -18,8 +18,10 @@ export const Header = ({ black, optionSelect }) => {
 
     // mudar o border-bottom de acordo com a seleção do usuário
     for (let i = 0; i < options.length; i++) {
-        if (options[i].innerHTML === "Todos") {
+        if (options[i].innerHTML === selectOption) {
             options[i].classList.add("select-option")
+        } else {
+            options[i].classList.remove("select-option")
         }
 
         // selecionar o tipo automaticamente quando entrar na página Movie
