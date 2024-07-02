@@ -7,8 +7,7 @@ export const Header = ({ black, optionSelect }) => {
     let options = document.querySelectorAll('.options li')
 
     // useState da opção selecionada
-    const [selectOption, setSelectOption] = useState()
-
+    const [selectOption, setSelectOption] = useState(localStorage.getItem("selectOption"))
 
     // mudar use stade da opção selecionada no tipo
     const handleOption = (value) => {
