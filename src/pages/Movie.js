@@ -14,17 +14,14 @@ const Movie = () => {
 
     // selecionar id do filme pela URL
     let idMovie = window.location.href.substring(46, 60)
-    console.log(window.location.href.substring(46, 60));
 
     // selecionar o tipo do filme pela URL
     let type = window.location.href.substring(46, 48);
-    console.log(window.location.href.substring(46, 48));
 
     if (type !== "tv") {
         type = "movie"
     } else {
         idMovie = window.location.href.substring(49, 60)
-        console.log(window.location.href.substring(49, 60));
     }
 
     // converter lista da função para json

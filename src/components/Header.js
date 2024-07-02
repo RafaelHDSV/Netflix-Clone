@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import "../App.css"
 
-export default ({ black, optionSelect }) => {
+export const Header = ({ black, optionSelect }) => {
     // selecionar o HTML das opções
     let options = document.querySelectorAll('.options li')
 
@@ -26,8 +26,8 @@ export default ({ black, optionSelect }) => {
         }
 
         // selecionar o tipo automaticamente quando entrar na página Movie
-        if (window.location.href.substring(22, 50) != "") {
-            if (options[i].innerHTML === optionSelect) {
+        if (window.location.href.substring(22, 50) !== "") {
+            if (options[i].innerHTML === selectOption) {
                 options[i].classList.add("select-option")
             } else {
                 options[i].classList.remove("select-option")
