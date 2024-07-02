@@ -16,8 +16,8 @@ const Movie = () => {
     let idMovie = window.location.href.substring(49, 60)
 
     // selecionar o tipo do filme pela URL
-    let type = window.location.href.substring(45, 47)
-    console.log(window.location.href.substring(45, 47));
+    let type = window.location.href.substring(46, 48);
+    console.log(window.location.href.substring(46, 48));
     if (type !== "tv") {
         type = "movie"
     } else {
