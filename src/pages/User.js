@@ -2,10 +2,10 @@ import { useState } from "react"
 
 import Header from "../components/Header"
 
-export const User = () => {
+const User = () => {
     // visibilidade de fundo do header
     const [backgroundHeader] = useState(false)
-    const [setUserSelect] = useState()
+    const [userSelect, setUserSelect] = useState()
 
     const usersList = [
         {
@@ -64,3 +64,5 @@ export const User = () => {
         </main>
     )
 }
+
+export default User

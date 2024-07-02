@@ -2,12 +2,12 @@ import { useState } from "react"
 
 import "../App.css"
 
-export const Header = ({ black, optionSelect }) => {
+const Header = ({ black, optionSelect }) => {
     // selecionar o HTML das opções
     let options = document.querySelectorAll('.options li')
 
     // useState da opção selecionada
-    const [selectOption, setSelectOption] = useState('')
+    const [selectOption, setSelectOption] = useState(localStorage.getItem('selectOption'))
 
     // mudar use stade da opção selecionada no tipo
     const handleOption = (value) => {
@@ -58,3 +58,5 @@ export const Header = ({ black, optionSelect }) => {
         </header>
     )
 }
+
+export default Header
