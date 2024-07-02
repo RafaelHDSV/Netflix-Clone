@@ -21,8 +21,8 @@ const Movie = () => {
     if (type !== "tv") {
         type = "movie"
     } else {
-        idMovie = idMovie.substring(49, 60)
-        console.log(idMovie.substring(49, 60));
+        idMovie = idMovie.substring(2, 20)
+        console.log(idMovie.substring(2, 20));
     }
 
     // converter lista da função para json
