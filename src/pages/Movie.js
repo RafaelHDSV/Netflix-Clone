@@ -13,8 +13,8 @@ const Movie = () => {
     const [backgroundHeader] = useState(false)
 
     // selecionar id do filme pela URL
-    let idMovie = window.location.href.substring(40, 50)
-    console.log(window.location.href.substring(40, 50));
+    let idMovie = window.location.href.substring(49, 60)
+    console.log(window.location.href.substring(49, 60));
 
     // selecionar o tipo do filme pela URL
     let type = window.location.href.substring(28, 30)
