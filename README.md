@@ -39,6 +39,10 @@ cd netflix-clone
 npm start
 ```
 
+or
+
+[URL Project](https://netflix-clone-rafael.vercel.app)
+
 <h2 id="routes">📍 Application Routes</h2>
 
 There are basically such routes on the website, where you can navigate them at any time
