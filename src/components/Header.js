@@ -24,14 +24,14 @@ const Header = ({ black, optionSelect }) => {
             options[i].classList.remove("select-option")
         }
 
-        // selecionar o tipo automaticamente quando entrar na página Movie
-        if (window.location.href.substring(22, 50) !== "") {
-            if (options[i].innerHTML === optionSelect) {
-                options[i].classList.add("select-option")
-            } else {
-                options[i].classList.remove("select-option")
-            }
-        }
+        // // selecionar o tipo automaticamente quando entrar na página Movie
+        // if (window.location.href.substring(22, 50) !== "") {
+        //     if (options[i].innerHTML === optionSelect) {
+        //         options[i].classList.add("select-option")
+        //     } else {
+        //         options[i].classList.remove("select-option")
+        //     }
+        // }
     }
 
     return (
