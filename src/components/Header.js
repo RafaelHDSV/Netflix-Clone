@@ -25,7 +25,7 @@ const Header = ({ black, optionSelect }) => {
         }
 
         // selecionar o tipo automaticamente quando entrar na página Movie
-        if (window.location.href.substring(22, 50) !== "") {
+        if (window.location.href.substring(40, 50) !== "") {
             if (options[i].innerHTML === optionSelect) {
                 options[i].classList.add("select-option")
             } else {
