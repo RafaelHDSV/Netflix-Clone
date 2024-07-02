@@ -18,7 +18,7 @@ export const Header = ({ black, optionSelect }) => {
 
     // mudar o border-bottom de acordo com a seleção do usuário
     for (let i = 0; i < options.length; i++) {
-        if (options[i].innerHTML == optionSelect) {
+        if (options[i].innerHTML === "Todos") {
             options[i].classList.add("select-option")
         } else {
             options[i].classList.remove("select-option")
