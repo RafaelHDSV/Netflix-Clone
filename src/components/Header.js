@@ -53,7 +53,7 @@ export const Header = ({ black, optionSelect }) => {
             <a href="/user">
                 <img className="header-user"
                     src={localStorage.getItem("user")}
-                    alt="user-image" />
+                    alt="user" />
             </a>
         </header>
     )
