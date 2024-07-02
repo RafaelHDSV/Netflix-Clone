@@ -34,7 +34,7 @@ const Header = ({ black, optionSelect }) => {
         }
     }
 
-    console.log((window.location.href.substring(22, 50)));
+    console.log((window.location.href.substring(40, 50)));
 
     return (
         <header className={black ? "header-black" : ""}>
