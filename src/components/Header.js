@@ -42,7 +42,7 @@ export const Header = ({ black, optionSelect }) => {
                 </a>
 
                 <ul className="options">
-                    <li onClick={() => handleOption("Todos")}>Todos</li>
+                    <li className="select-option" onClick={() => handleOption("Todos")}>Todos</li>
                     <li onClick={() => handleOption("Séries")}>Séries</li>
                     <li onClick={() => handleOption("Filmes")}>Filmes</li>
                 </ul>
