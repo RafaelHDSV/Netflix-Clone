@@ -20,8 +20,6 @@ export const Header = ({ black, optionSelect }) => {
     for (let i = 0; i < options.length; i++) {
         if (options[i].innerHTML === "Todos") {
             options[i].classList.add("select-option")
-        } else {
-            options[i].classList.remove("select-option")
         }
 
         // selecionar o tipo automaticamente quando entrar na página Movie
