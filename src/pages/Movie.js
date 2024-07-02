@@ -14,9 +14,11 @@ const Movie = () => {
 
     // selecionar id do filme pela URL
     let idMovie = window.location.href.substring(46, 60)
+    console.log(`ID: ${window.location.href.substring(46, 60)}`);
 
     // selecionar o tipo do filme pela URL
     let type = window.location.href.substring(46, 48);
+
     if (type !== "tv") {
         type = "movie"
     } else {
