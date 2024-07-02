@@ -89,7 +89,7 @@ function App() {
             </section>
 
             <footer>
-              <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
+              <p>Coded by <a href="https://github.com/RafaelHDSV" target="blank">Rafael Henrique de Sousa Vieira</a>.</p>
             </footer>
 
             {movieList.length <= 0 &&

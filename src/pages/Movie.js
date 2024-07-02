@@ -5,19 +5,20 @@ import Header from "../components/Header"
 
 import "../App.css"
 
-export default () => {
+const Movie = () => {
     // armazenar o filme escolhido
     const [movie, setMovie] = useState([])
 
     // visibilidade de fundo do header
-    const [backgroundHeader, setBackgroundHeader] = useState(false)
+    const [backgroundHeader] = useState(false)
 
     // selecionar id do filme pela URL
     let idMovie = window.location.href.substring(28, 40)
+    console.log(window.location.href.substring(28, 40));
 
     // selecionar o tipo do filme pela URL
     let type = window.location.href.substring(28, 30)
-    if (type != "tv") {
+    if (type !== "tv") {
         type = "movie"
     } else {
         idMovie = idMovie.substring(10, 3)
@@ -31,7 +32,7 @@ export default () => {
         }
 
         loadMovie()
-    }, [])
+    }, [idMovie, type])
 
     // formatar criadores da API
     let createdBy = []
@@ -64,7 +65,7 @@ export default () => {
             {/* header */}
             <Header
                 black={backgroundHeader}
-                optionSelect={type == "tv" ? "Séries" : "Filmes"}
+                optionSelect={type === "tv" ? "Séries" : "Filmes"}
             ></Header>
 
             <div className="movie-container">
@@ -101,3 +102,5 @@ export default () => {
         </main >
     )
 }
+
+export default Movie
