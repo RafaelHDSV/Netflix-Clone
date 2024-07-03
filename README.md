@@ -8,7 +8,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
 <p align="center">
-    <img src="./public/images/main.mp4" alt="Image Example">
+    <video src="./public/images/main.mp4" controls autoplay></video>
 </p>
 
 <p align="center">
