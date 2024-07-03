@@ -7,8 +7,9 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
+<video src="./public/images/main.mp4"></video>
+
 <p align="center">
-    <video src="./public/images/main.mp4"></video>
 </p>
 
 <p align="center">
