@@ -8,7 +8,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Netflix-Clone?style=for-the-badge)
 
 <p align="center">
-    <img src="./public/images/main.gif" alt="Image Example">
+    <img src="./public/images/main.mp4" alt="Image Example">
 </p>
 
 <p align="center">
