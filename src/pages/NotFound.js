@@ -3,9 +3,9 @@ import Header from "../components/Header"
 
 import "../App.css"
 
-export default () => {
+const NotFound = () => {
     // visibilidade de fundo do header
-    const [backgroundHeader, setBackgroundHeader] = useState(false)
+    const [backgroundHeader] = useState(false)
 
     return (
         <>
@@ -20,3 +20,5 @@ export default () => {
         </>
     )
 }
+
+export default NotFound

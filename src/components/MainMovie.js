@@ -1,6 +1,6 @@
 import "../App.css"
 
-export default ({ item }) => {
+const MainMovie = ({ item }) => {
     // selecionar o ano da data fornecida pela API
     let year = new Date(item.first_air_date)
 
@@ -43,3 +43,5 @@ export default ({ item }) => {
         </section >
     )
 }
+
+export default MainMovie

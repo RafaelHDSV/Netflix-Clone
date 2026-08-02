@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import "../App.css"
 
-export default ({ title, itens }) => {
+const MovieRow = ({ title, itens }) => {
     // localização na coordenada X
     const [scrollX, setScrollX] = useState(0)
     // opacidade da leftArrow
@@ -103,3 +103,5 @@ export default ({ title, itens }) => {
         </>
     )
 }
+
+export default MovieRow

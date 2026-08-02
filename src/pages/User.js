@@ -5,7 +5,7 @@ import Header from "../components/Header"
 const User = () => {
     // visibilidade de fundo do header
     const [backgroundHeader] = useState(false)
-    const [userSelect, setUserSelect] = useState()
+    const [, setUserSelect] = useState()
 
     const usersList = [
         {
