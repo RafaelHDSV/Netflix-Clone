@@ -1,3 +1,5 @@
+export { F as FetchPublicSummaryOptions, P as PublicSummary, V as VisitCountVisibilityOptions, f as fetchPublicSummary, a as formatVisitCountLabel, i as isLocalDevHost, r as resolveVisitCountLabel, s as shouldShowVisitCount } from './publicSummary-BHF2Sqxn.js';
+
 interface VieiraConfig {
     projectKey: string;
     respectDnt?: boolean;
@@ -27,4 +29,11 @@ interface PageviewPayload {
 
 declare function trackPageview(config: VieiraConfig): void;
 
-export { type PageviewPayload, type VieiraConfig, trackPageview };
+declare const OPT_OUT_STORAGE_KEY = "vieira:analytics:optout";
+/** Flag de sessão no `globalThis`, lida também por `@vieira/institucional`. */
+declare const OPT_OUT_MEMORY_KEY = "__vieiraAnalyticsOptOut";
+declare function isOptedOut(): boolean;
+declare function optOut(): void;
+declare function optIn(): void;
+
+export { OPT_OUT_MEMORY_KEY, OPT_OUT_STORAGE_KEY, type PageviewPayload, type VieiraConfig, isOptedOut, optIn, optOut, trackPageview };

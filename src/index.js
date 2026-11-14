@@ -1,3 +1,4 @@
+import { VisitCountSlot } from './VisitCountSlot'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -8,6 +9,7 @@ root.render(
   <React.StrictMode>
     <App />
     <VieiraAnalytics projectKey='netflix-clone' />
+    <VisitCountSlot />
   </React.StrictMode>
 );
 
