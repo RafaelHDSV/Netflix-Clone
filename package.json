@@ -67,7 +67,7 @@
     "follow-redirects@1": "1.16.0",
     "lodash@4": "4.17.23",
     "picomatch@2": "2.3.2",
-    "node-forge@1": "1.4.0",
+    "node-forge@1": "1.4.3",
     "yaml@1": "1.10.3",
     "yaml@2": "2.8.3",
     "flatted@3": "3.4.2",
